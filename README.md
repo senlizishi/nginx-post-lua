@@ -1,5 +1,5 @@
 # nginx-post-lua
-A set of Lua scripts that enable Nginx to handle Post requests.This uses the [lua-nginx-module](https://github.com/openresty/lua-resty-upload) provided by OpenResty to support Nginx Lua extensions.
+A set of Lua scripts that enable Nginx to handle Post requests.This uses the [lua-nginx-module](https://github.com/openresty/lua-resty-upload) provided by **OpenResty** to support Nginx Lua extensions.
 
 ## POST json Format
 ### data structure
