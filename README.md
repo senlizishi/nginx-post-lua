@@ -1,5 +1,5 @@
 # nginx-post-form-data
-A Lua script that enables Nginx to receive Post requests in form-data format
+A Lua script that enables Nginx to receive Post requests in form-data format.
 
 ### Common form-data data formats
  ```
@@ -18,11 +18,11 @@ GZ
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
  ```
  In the header information, **Content-Type: multipart/form-data; boundary=
-----WebKitFormBoundary7MA4YWxkTrZu0gW** specifies the format and boundary (split string) respectively, and uses the string specified by the boundary as the split in the body, which can be easily restored to the form of key:value
-### lua-resty-upload
+----WebKitFormBoundary7MA4YWxkTrZu0gW** specifies the format and boundary (split string) respectively, and uses the string specified by the boundary as the split in the body, which can be easily restored to the form of key:value.
+### Lua-resty-upload
 This uses the [lua-nginx-module](https://github.com/openresty/lua-resty-upload) provided by OpenResty to support Nginx Lua extensions.
 
-### example
+### How to use
  ```
  location ~ ^/demo/(\w+) {
             ...
@@ -31,3 +31,5 @@ This uses the [lua-nginx-module](https://github.com/openresty/lua-resty-upload) 
             ...
         }
  ```
+### Article
+[Nginx Post(form-data)](https://www.toutiao.com/article/6989804754533040670/)
