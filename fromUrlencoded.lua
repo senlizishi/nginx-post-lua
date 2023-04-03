@@ -33,5 +33,5 @@ end
 
 ngx.var.request_body_data = table2json(args);
 
-ngx.say('{"code":0,"message":""}');
+ngx.say('{"code":0,"message":"success"}');
 
